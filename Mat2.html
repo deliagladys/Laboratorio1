@@ -1,14 +1,21 @@
-
+<!DOCTYPE html>
 
 <html>
 <body class="estiloFondoEcuacion" >
-		<div class="estiloMat2">SOLUCIONADOR DE ECUACIONES DE SEGUNDO GRADO</div>
+		<div class="estiloMat2">SOLUCION DE ECUACIONES DE SEGUNDO GRADO</div>
 	
-	<head>
-		
+	<head >
+		<meta  charset="UTF-8">
 		<title> ECUACIONES</title>
 		<link rel="stylesheet" type="text/css" href="Css\Style.css" media="all">
-	
+		<script type="text/javascript" >
+			var a=parseInt(prompt("Variable a"));
+			var b=parseInt(prompt("Variable b"));
+			var c=parseInt(prompt("Variable c"));
+			var solucion1=(-b+(Math.sqrt((Math.pow(b,2)-(4*a*c)))))/(2*a);
+			var solucion2=(-b-(Math.sqrt((Math.pow(b,2)-(4*a*c)))))/(2*a);
+			document.write("PRIMERA SOLUCION: " + solucion1 + " ");
+			document.write("SEGUNDA SOLUCION: " + solucion2);
 		</script>
 	</head>
 	</body>
