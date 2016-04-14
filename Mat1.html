@@ -10,13 +10,31 @@
 		<link rel="stylesheet" type="text/css" href="Css\Style.css" media="all">
 		<script type="text/javascript" >
 
-			function esprimo(n){
+
+			var i,j,primo;
+			document.write('1 ');
+			document.write('2 ');
+			document.write('3 ');
+			for(i=4;i<=200;i++){
+				primo=0
+				for(j=2;j<i;j++){
+					if (i%j==0) 
+						primo=1;{
+							if (primo==0) {
+								document.write(i+" ");
+								break;
+							}
+						}
+				}
+			}
+
+			/*function esprimo(n){
 				var primo ;
 				primo= true;
 				for(var i = 2; i<n; i++){
 					if(n % i == 0){
 						primo = false;
-
+						//var cont ++;
 						break;
 					}
 				}
@@ -29,7 +47,8 @@
 			}
 			else{
 				document.write("El numero NO ES PRIMO");
-		}
+		}*/
+			
 		</script>
 	</head>
 	</body>
